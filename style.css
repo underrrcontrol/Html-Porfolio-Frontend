@@ -1,0 +1,89 @@
+h2 {
+    color: rgb(55, 200, 219);
+}
+p {
+    color: rgb(23, 160, 160);
+}
+.mat-card {
+    border-radius: 32px;
+    margin: 20px 10px;
+    padding: 32px;
+    border-color: rgb(7, 85, 109);
+    border-style: dashed;
+}
+
+
+div#profile-background img {
+    width: 100%;
+    height: 800px;
+    border-radius: 32px 32px 0 0;
+}
+
+.profile-image {
+    
+    border-radius: 50%;
+    width: 252px;
+    height: 252px;
+    z-index: 1;
+    margin-top: -150px;
+}
+
+.hobbies-image {
+
+    width: 700px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+div#info-actions {
+    display: flex;
+}
+div#info-actions button {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+div#info-contact span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+div#hobbies {
+    font-size: 2rem;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(34, 89, 160);
+}
+
+div#info-contact span a {
+    color: rgb(66, 195, 235);
+    touch-action: manipulation;
+    text-decoration: none;
+}
+div#info-company {
+    font-size: 1.2rem;
+    line-height: 2.25;
+}
+div#info-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#info-data h1 {
+    font-size: 1.8rem;
+    display: inline;
+    font-weight: 500;
+    line-height: 1.50;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+div#info-data ul#info-datails li a img {
+    width: 100px;
+    height: 100px;
+    margin-right: 320px;
+}
+footer {
+    font-size: 24px;
+    color: rgb(99, 153, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<meta name="description" content="Roughly 155 characters">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
+<!-- Content -->
+<!-- MODIFICACION PARA VER SI FUNCIONA PARA SUBIR EL PORFOLIO ACTUALIZADO EN 2DO MODULO -->
+
+    <div class="card mat-card" id="first-card">
+        <div id="profile-background"><img src="D:\Pictures\Programacion - Img\back-end-development-1.jpg" alt="Imagen de fondo"></div>
+        <div id="info" style="padding: 16px">
+            <div id="info-img">
+                <img class="profile-image" src="D:\Pictures\Mine\IMG_20201223_214331_776.jpg" alt="Imagen de perfil">
+                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            </div>
+            <div id="info-data">
+                <div>
+                    <h1>Daniele Fabricio</h1>
+                    <div id="info-company">Administrativo en Colegio De Escribanos De Entre Ríos</div>
+                    <div id="info-contact">
+                        <span>Concepción Del Uruguay, Entre Ríos (Argentina) </span>
+                        <span><a href="#">Informacion de contacto</a></span>
+                    </div>
+                </div>
+                    <ul id="info-datails">
+                        <li><a href="#">
+                            <img src="https://static.javatpoint.com/images/javascript/javascript_logo.png">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="https://play-lh.googleusercontent.com/vzHVyL8G7birnPZ0zuCQQ2uDxuLIXzYOUGjFDFzIqfx-ww1fq8IysoEiWzhWI3Dw08g=w240-h480-rw">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="https://fernandosarachaga.com/wp-content/uploads/lenguaje-programacion-css.jpeg">
+                        </a></li>
+                    </ul>
+            </div>
+            <div id="info-actions">
+                <button type="button" class="btn btn-primary">Estoy interesado en</button>
+                <button type="button" class="btn btn-light">Añadir sección</button>
+                <button type="button" class="btn btn-lihgt">Más</button>
+            </div>
+        </div>
+    </div>
+    <div class="card mat-card" id="1">
+        <div class="card-titles">
+            <h2>Acerca de</h2>
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+                <a href="#" class="btn-right">
+                    <i class="fa fa-pen"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p id="text-acercade">Tengo 36 años, realizo actividades administrativas, tributariuas y judiciales hace mas de 14 años en el Colegio De Escribanos de Entre Ríos. Soy una persona creativa, flexible y adaptable a las nuevas tecnologías</p>
+        </div>
+        <div>
+            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+        </div>
+    </div>
+    <div class="card mat-card" id="hobbies">HOBBIES
+        <img class="hobbies-image" src="D:\Pictures\Mine\FB_IMG_1579739544961.jpg" alt="show en vivo">
+    </div>
+    <script>
+        //funcion que
+        //cambia el estilo del input a visible
+        //toma el valor del texto del parrafo con id "text-acercade"
+        //lo muestra en consola .
+        function cambiar_parrafo(){
+            document.getElementById("edit-acercade").style.display="block";
+            let text = document.getElementById("text-acercade").innerText;
+            console.log(texto);
+        };
+    
+        function myFunction2(valor){
+            document.getElementById("text-acercade").innerText=valor
+        };
+        let textarea=document.getElementById("edit-acercade")
+        textarea.addEventListener('Keyup', (e) => {
+            logmessage('Key "${e.key}" released [event: keyup]');
+            if (e.key=="Enter"){
+                document.getElementById("edit-acercade").style.display="none"
+                }
+            });
+            //carga el contenido de un archivo de texto
+            //y lo muestra en el parrafo
+            function showFile(input) {
+                let file = input.files[0];
+                alert(`File name: ${file.name}`); // e.g my.png
+                alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+    
+                let reader = new FileReader();
+                reader.readAsText(file);
+                reader.onload = function() {
+                    console.log(reader.result);
+                    document.getElementById("text-acercade").innerText=reader.result;
+                };
+                reader.onerror = function() {
+                    console.log(reader.error);
+                };
+            };
+    
+
+        function foo() {
+            undefined = 2; // bad idea!
+            console.log(undefined*2);
+            var newDiv = document.createElement("div");
+            var newContent = document.createTextNode("Hola! ¿Qué tal? Soy un párrafo creado por código de manera dinámica, por medio de una función. Y la ubicación en la página se la damos con un insertbefore id = 1, osea que sería antes del 2do div, osea antes del div con id 1");
+            newDiv.appendChild(newContent); //añade texto al div creado.
+            // añade el elemento creado y su contenido al DOM
+            var currentDiv = document.getElementById("1");
+            document.body.insertBefore(newDiv, currentDiv);
+        }
+
+        foo();
+
+    </script>
+    <footer>Autoría y derechos Daniele Fabricio - Estudiante developer Argentina Programa</footer>
+</body>
+</html>
