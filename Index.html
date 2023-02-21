@@ -75,6 +75,14 @@
         <div>3</div>
         <div>4</div>
     </div>
+
+    <h1 style="font-size: 50px; margin: 40px; padding: 60px; text-align: center;">LINKS DE INTERES</h1>
+    <div class="flex-container">
+            <a href="https://twitter.com/UnderrrControl">twitter</a>
+            <a href="https://www.instagram.com/underrrcontrol/?hl=es">instagram</a>
+            <a href="https://github.com/underrrcontrol">github</a>
+    </div>
+
     <script>
         //funcion que
         //cambia el estilo del input a visible
@@ -119,7 +127,7 @@
             undefined = 2; // bad idea!
             console.log(undefined*2);
             var newDiv = document.createElement("div");
-            var newContent = document.createTextNode("Hola! ¿Qué tal? Soy un párrafo creado por código de manera dinámica, por medio de una función. Y la ubicación en la página se la damos con un insertbefore id = 1, osea que sería antes del 2do div, osea antes del div con id 1");
+            var newContent = document.createTextNode("Hola! ¿Qué tal? Soy un párrafo creado por código de manera dinámica, por medio de una función.") // Y la ubicación en la página se la damos con un insertbefore id = 1, osea que sería antes del 2do div, osea antes del div con id 1;
             newDiv.appendChild(newContent); //añade texto al div creado.
             // añade el elemento creado y su contenido al DOM
             var currentDiv = document.getElementById("1");
